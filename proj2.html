@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<title>Page2</title>
+<script language="JavaScript">
+    function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+    var st1 = getUrlVars()["state"];
+</script>
+<style type="text/css">
+body{
+background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url("pic.jpg");
+background-size: cover;
+background-attachment: fixed;
+}
+h1{
+font-size:40px;
+}
+body{
+background-color:white;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 300px;
+}
+div.gallery:hover {
+  border: 1px solid #777;
+}
+div.gallery img {
+  width: 100%;
+  height: 100;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+</head>
+<body >
+<center><h1><font color="white"><script>document.write(st1);</script></font></h1></center>
+<script>
+  if(st1=="Chandigarh")
+   {
+      document.write("<center><table><tr><td>");
+      document.write("<div class='gallery'>");
+      document.write("<a href='E:/projectheme/states/funcity-chandigarh.html'>");
+      document.write("<img src='E:/projectheme/india/funcity-chandigarh.jpg' width='304' height='228' onclick='location.href=this.src' >");
+      document.write("<center><font size=5 color='white'>Funcity</font></center></a></div>");
+      document.write("</td></tr></table></center>");
+   }
+   else if(st1=="Delhi")
+   {
+      document.write("<center><table><tr><td>");
+      document.write("<div class='gallery'>");
+      document.write("<a href='E:/projectheme/states/splash-water-park-delhi.html'>");
+      document.write("<img src='E:/projectheme/india/splash-water-park-delhi.jpg' width='304' height='228' onclick='location.href=this.src' >");
+      document.write("<center><font size=5 color='white'>Splash Water Park</font></center></a></div>");
+      document.write("</td></tr></table></center>");
+   }
+   else if(st1=="Haryana")
+   {
+       document.write("<center><table><tr><td>");
+      document.write("<div class='gallery'>");
+      document.write("<a href='E:/projectheme/states/appu-ghar-gurgaon-haryana.html'>");
+      document.write("<img src='E:/projectheme/india/appu-ghar-gurgaon-haryana.jpg' width='304' height='228' onclick='location.href=this.src' >");
+      document.write("<center><font size=5 color='white'>Appu Ghar Gurgaon</font></center></a></div>");
+       document.write("</td></tr></table></center>");
+   }
+     else if(st1=="Hydrabad")
+   {
+       document.write("<center><table><tr><td width=>");
+      document.write("<div class='gallery'>");
+      document.write("<a href='E:/projectheme/states/esselworld-hydrabad.html'>");
+      document.write("<img src='E:/projectheme/india/esselworld-hydrabad.png' width='304' height='228' onclick='location.href=this.src' >");
+      document.write("<center><font size=5 color='white'>Essel World</font></center></a></div>");
+      document.write("</td>");
+
+      document.write("<td>");
+       document.write("<div class='gallery'>");
+      document.write("<a href='E:/projectheme/states/jalavihar-hydrabad.html'>");
+      document.write("<img src='E:/projectheme/india/jalavihar-hydrabad.jpg' width='304' height='228' onclick='location.href=this.src' >");
+      document.write("<center><font size=5 color='white'>Jalavihar</font></center></a></div>");
+      document.write("</td></tr>");
+
+      document.write("<tr><td>");
+       document.write("<div class='gallery'>");
+       document.write("<a href='E:/projectheme/states/ocean-park-hydrabad.html'>");
+      document.write("<img src='E:/projectheme/india/ocean-park-hydrabad.jpg' width='304' height='228' onclick='location.href=this.src' >");
+      document.write("<center><font size=5 color='white'>Ocean Park</font></center></a></div>");
+      document.write("</td>");
+
+      document.write("<td>");
+       document.write("<div class='gallery'>");
+       document.write("<a href='E:/projectheme/states/wonderla-hydrabad.html'>");
+      document.write("<img src='E:/projectheme/india/wonderla-hydrabad.jpg' width='304' height='228' onclick='location.href=this.src' >");
+      document.write("<center><font size=5 color='white'>Wonderla</font></center></a></div>");
+      document.write("</td></tr></table>");
+   }
+   else if(st1=="Jaipur")
+   {
+      document.write("<center><table><tr><td>");
+      document.write("<div class='gallery'>");
+      document.write("<a href='E:/projectheme/states/Appu-Ghar-jaipur.html'>");
+      document.write("<img src='E:/projectheme/india/Appu-Ghar-jaipur.jpg' width='304' height='228' onclick='location.href=this.src' >");
+      document.write("<center><font size=5 color='white'>Appu Ghar</font></center></a></div>");
+      document.write("</td></tr></table></center>");
+   }
+    else if(st1=="Karnataka")
+   {
+      document.write("<center><table><tr><td>");
+      document.write("<div class='gallery'>");
+      document.write("<a href='E:/projectheme/states/wonderla-bangalore-karnataka.html'>");
+      document.write("<img src='E:/projectheme/india/wonderla-bangalore-karnataka.jpg' width='304' height='228' onclick='location.href=this.src' >");
+      document.write("<center><font size=5 color='white'>Wonderla</font></center></a></div>");
+      document.write("</td></tr></table></center>");
+   }
+    else if(st1=="Kerala")
+   {
+      document.write("<center><table><tr><td>");
+      document.write("<div class='gallery'>");
+      document.write("<a href='E:/projectheme/states/wonderla-amusement-park-kochi-kerala.html'>");
+      document.write("<img src='E:/projectheme/india/wonderla-amusement-park-kochi-kerala.jpg' width='304' height='228' onclick='location.href=this.src' >");
+      document.write("<center><font size=5 color='white'>Wonderla Amusement Park</font></center></a></div>");
+      document.write("</td></tr></table></center>");
+   }
+    else if(st1=="Kolkata")
+   {
+      document.write("<center><table><tr><td>");
+      document.write("<div class='gallery'>");
+      document.write("<a href='E:/projectheme/states/aquatica-kolkata.html'>");
+      document.write("<img src='E:/projectheme/india/aquatica-kolkata.jpg' width='304' height='228' onclick='location.href=this.src' >");
+      document.write("<center><font size=5 color='white'>Aquatica</font></center></a></div>");
+      document.write("</td>");
+
+     document.write("<td>");
+       document.write("<div class='gallery'>");
+       document.write("<a href='E:/projectheme/states/nicco-park-kolkata.html'>");
+      document.write("<img src='E:/projectheme/india/nicco-park-kolkata.jpg' width='304' height='228' onclick='location.href=this.src' >");
+      document.write("<center><font size=5 color='white'>Nicco Park</font></center></a></div>");
+      document.write("</td></tr>");
+   }
+    else if(st1=="Maharashtra")
+   {
+      document.write("<center><table><tr><td>");
+      document.write("<div class='gallery'>");
+      document.write("<a href='E:/projectheme/states/della-adventure-park-maharashtra.html'>");
+      document.write("<img src='E:/projectheme/india/della-adventure-park-maharashtra.jpg' width='304' height='228' onclick='location.href=this.src' >");
+      document.write("<center><font size=5 color='white'>Della Adventure Park</font></center></a></div>");
+      
+	  document.write("<td>");
+       document.write("<div class='gallery'>");
+      document.write("<a href='E:/projectheme/states/adlabs-imagica-mumbai.html'>");
+      document.write("<img src='E:/projectheme/india/adlabs-imagica-mumbai.jpg' width='304' height='228' onclick='location.href=this.src' >");
+      document.write("<center><font size=5 color='white'>Adlabs Imagica</font></center></a></div>");
+      document.write("</td>");
+
+      document.write("<td>");
+       document.write("<div class='gallery'>");
+       document.write("<a href='E:/projectheme/states/suraj-water-park-mumbai.html'>");
+      document.write("<img src='E:/projectheme/india/suraj-water-park-mumbai.jpg' width='304' height='228' onclick='location.href=this.src' >");
+      document.write("<center><font size=5 color='white'>Suraj Water Park</font></center></a></div>");
+      document.write("</td></tr></table>");
+   }
+   else if(st1=="Mumbai")
+   {
+      document.write("<center><table><tr><td>");
+      document.write("<div class='gallery'>");
+      document.write("<a href='E:/projectheme/states/adlabs-imagica-mumbai.html'>");
+      document.write("<img src='E:/projectheme/india/adlabs-imagica-mumbai.jpg' width='304' height='228' onclick='location.href=this.src' >");
+      document.write("<center><font size=5 color='white'>Adlabs Imagica</font></center></a></div>");
+      document.write("</td>");
+
+     document.write("<td>");
+       document.write("<div class='gallery'>");
+       document.write("<a href='E:/projectheme/states/suraj-water-park-mumbai.html'>");
+      document.write("<img src='E:/projectheme/india/suraj-water-park-mumbai.jpg' width='304' height='228' onclick='location.href=this.src' >");
+      document.write("<center><font size=5 color='white'>Suraj Water Park</font></center></a></div>");
+      document.write("</td></tr>");
+   }
+    else if(st1=="Mysore")
+   {
+      document.write("<center><table><tr><td>");
+      document.write("<div class='gallery'>");
+      document.write("<a href='E:/projectheme/states/grs-fantasy-park-mysore.html'>");
+      document.write("<img src='E:/projectheme/india/grs-fantasy-park-mysore.jpg' width='304' height='228' onclick='location.href=this.src' >");
+      document.write("<center><font size=5 color='white'>Grs Fantasy Park</font></center></a></div>");
+      document.write("</td></tr></table></center>");
+   }
+    else if(st1=="Patna")
+   {
+      document.write("<center><table><tr><td>");
+      document.write("<div class='gallery'>");
+      document.write("<a href='E:/projectheme/states/Funtasia_island_patna.html'>");
+      document.write("<img src='E:/projectheme/india/Funtasia_island_patna.jpg' width='304' height='228' onclick='location.href=this.src' >");
+      document.write("<center><font size=5 color='white'>Funtasia Island</font></center></a></div>");
+      document.write("</td></tr></table></center>");
+   }
+   
+    else if(st1=="TamilNadu")
+   {
+       document.write("<center><table><tr><td width=>");
+      document.write("<div class='gallery'>");
+      document.write("<a href='E:/projectheme/states/black-thunder-TN.html'>");
+      document.write("<img src='E:/projectheme/india/black-thunder-TN.jpg' width='304' height='228' onclick='location.href=this.src' >");
+      document.write("<center><font size=5 color='white'>Black Thunder</font></center></a></div>");
+      document.write("</td>");
+
+      document.write("<td>");
+       document.write("<div class='gallery'>");
+      document.write("<a href='E:/projectheme/states/kishkinta-tn.html'>");
+      document.write("<img src='E:/projectheme/india/kishkinta-tn.jpg' width='304' height='228' onclick='location.href=this.src' >");
+      document.write("<center><font size=5 color='white'>Kishkinta</font></center></a></div>");
+      document.write("</td></tr>");
+
+      document.write("<tr><td>");
+       document.write("<div class='gallery'>");
+      document.write("<a href='E:/projectheme/states/MGM-Dizzee-World-chennai.html'>");
+      document.write("<img src='E:/projectheme/india/MGM-Dizzee-World-chennai.jpg' width='304' height='228' onclick='location.href=this.src' >");
+      document.write("<center><font size=5 color='white'>MGM Dizzee World</font></center></a></div>");
+      document.write("</td>");
+
+      document.write("<td>");
+       document.write("<div class='gallery'>");
+       document.write("<a href='E:/projectheme/states/queens-land-TN.html'>");
+      document.write("<img src='E:/projectheme/india/queens-land-TN.jpg' width='304' height='228' onclick='location.href=this.src' >");
+      document.write("<center><font size=5 color='white'>Queens Land</font></center></a></div>");
+      document.write("</td></tr></table>");
+   }
+  
+   else
+   {
+      document.write("<center><table><tr><td>");
+      document.write("<div class='gallery'>");
+      document.write("<a href='E:/projectheme/states/worlds-of-wonder-utter-pradesh.html'>");
+      document.write("<img src='E:/projectheme/india/worlds-of-wonder-utter-pradesh.jpg' width='304' height='228' onclick='location.href=this.src' >");
+      document.write("<center><font size=5 color='white'>Worlds of Wonder</font></center></a></div>");
+      document.write("</td></tr></table></center>");
+   }
+</script>
+</body>
+</html>

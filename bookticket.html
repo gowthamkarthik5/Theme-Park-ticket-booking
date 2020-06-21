@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Ticket</title>
+
+  <script>
+            document.write("<center><font size=30>")
+            var a=localStorage.getItem("textvalue");
+			document.write("<font color='white'>");
+            document.write(a);
+			document.write("</font>");
+            document.write("</font></center>");
+  </script>
+  <style>
+  body{
+background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("E:/projectheme/hd-img/booking2.jpg");
+background-size: cover;
+background-attachment: fixed;
+}
+  .price{
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  font-size: 30px;
+  color: white;
+  }
+  .ticket{
+  position: absolute;
+  top: 100px;
+  right: 500px;
+  left: 500px;
+  font-size: 30px;
+  }
+  .tic{
+  position: absolute;
+  top: 180px;
+  right: 500px;
+  left: 500px;
+  font-size: 20px;
+  }
+  .tic2{
+  position: absolute;
+  top: 207px;
+  right: 500px;
+  left: 500px;
+  font-size: 20px;
+  }
+  .tic3{
+  position: absolute;
+  top: 350px;
+  left: 550px;
+  font-size: 20px;
+  }
+  .tic4{
+  position: absolute;
+  top: 250px;
+  left: 555px;
+  font-size: 20px;
+  }
+
+  </style>
+    
+ <script>
+  function fn()
+  {
+      var rd1=document.getElementById("rd1");
+      var rd2=document.getElementById("rd2");
+      if(rd1.checked==true)
+      {
+        document.getElementById('d1').style.display='block';
+        document.getElementById('d2').style.display='none';
+        //document.write("<input type='button' id='b2' value='Click' onclick='fn1()'>");
+      }
+      else
+      {
+        document.getElementById('d2').style.display='block';
+        document.getElementById('d1').style.display='none';
+      }
+  }
+  </script>
+
+</head>
+
+<body><font color="white"> <form action="pay.html">
+    <div class="price">
+        <table border=1>
+            <col width="130">
+            <col width="80">
+             <tr>
+                 <td colspan=2><center>Ticket Price</center></td>
+             </tr>
+             <tr>
+                 <td>
+                     Adult
+                 </td>
+                 <td>
+                     650
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     Child
+                 </td>
+                 <td>
+                     350
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <font size=4>Family Package</font><br>
+                     <font size=3>(3<=members>7)</font>
+                 </td>
+                 <td>
+                     1800
+                 </td>
+             </tr>
+        </table>
+    </div>
+    <div class="ticket">
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	 <font size=5>  Date </font> &nbsp;&nbsp;&nbsp;<input type="datetime" placeholder="DD//MM//YYYY"><br/>
+        Family Package <input type="radio" id="rd1" name="fm" value="Yes" onclick="fn()"> Yes
+                      <input type="radio" id="rd2" name="fm" value="No" onclick="fn()"> No<br>
+    </div>
+    <div class="tic" id="d1">
+        Enter No. of Families <input type="number" placeholder="No. of Families" id="n1" />
+    </div>
+     <div class="tic2" id="d2">
+        Enter No. of Adults &nbsp;&nbsp; <input type="number" placeholder="No. of Adults" id="n2"/><br/>
+        Enter No. of Children <input type="number" placeholder="No. of Children" id="n3" /> <br/>
+    </div>
+    <div class=tic3>
+        <input type='button' id='b2' value='Click to know Amount' onclick='fn1()'> &nbsp;&nbsp; 
+		<input type='submit' id='b3' value='Click to Pay' onclick="passvalue()">
+    </div>
+       <div class="tic4"><h2 id="res"></h2></div>
+	    
+     <script>
+
+  function fn1()
+  {
+      if(rd1.checked==true)
+      {
+         var fam=document.getElementById("n1").value;
+         var tot=fam*1800;
+         document.getElementById("res").innerHTML="Total Amount="+tot;
+         //var b=document.getElementById("res").value;
+         //document.write(b);
+      }
+      else
+      {
+         var adult=document.getElementById("n2").value;
+         var child=document.getElementById("n3").value;
+         var tot=(adult*650)+(child*350);
+         document.getElementById("res").innerHTML="Total Amt="+tot;
+      }
+
+  }
+    
+
+  </script> 
+ 
+  </form>
+  <script>
+         function passvalue()
+         {
+			 var fn1=document.getElementById("res").value;
+             //var fn1=1;
+             localStorage.setItem("textvalues",fn1);
+             return false;
+         }
+  </script>
+</font></body>	
+</html>

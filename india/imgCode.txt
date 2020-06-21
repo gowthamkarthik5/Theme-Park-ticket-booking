@@ -1,0 +1,36 @@
+<body>
+   <center>
+   <h1>
+       <script>document.write(st1); </script>
+   </h1>
+
+   </center>
+
+   <div class="gallery">
+    <a target="_blank" href="proj3.html">
+    <img src="im1.jpg" alt="Cinque Terre" width="600" height="400">
+    <center><font size=5>Black Thunder</font></center>
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="pic2.jpg">
+  <img src="pic2.jpg" alt="Forest" width="600" height="400">
+  <center><font size=5>VGP</font></center>
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="pict.jpg">
+    <img src="pict.jpg" alt="Northern Lights" width="600" height="400">
+    <center><font size=5>Queens Land</font></center>
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="jurassic_world.jpg">
+    <img src="jurassic_world.jpg" alt="Mountains" width="600" height="400">
+    <center><font size=5>MGM</font></center>
+  </a>
+</div>
+</body>

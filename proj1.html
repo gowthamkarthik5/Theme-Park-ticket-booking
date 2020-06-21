@@ -1,0 +1,90 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<title>Royal Bookings</title>
+
+<style type="text/css">
+
+body{
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("pict.jpg");
+background-size: cover;
+background-attachment: fixed;
+}
+.content{
+background: white;
+width: 50%
+padding: 40px;
+margin: 100px auto;
+}
+div.con{
+    position: absolute;
+  top: 400px;
+  right: 200px;
+  left: 200px;
+  font-size: 20px;  
+  color: white;
+		}	
+var form = document.getElementById("stat");
+
+            // Now, set up a submit event handler for the form
+            form.addEventListener("submit", function(){
+
+                // Only when the form has been submitted do you want the textbox value
+                var inputTest = document.getElementById('stat').value;
+                localStorage.setItem( 'objectToPass', inputTest );
+
+                window.location = "NEW URL";
+
+            });
+			
+	
+</style>
+
+</head>
+<body>
+    <form action="proj2.html">
+<center>
+<font size="10" color="white">
+<div class="bg-text">
+THEME PARK TICKET BOOKING
+<table width="25%" height="30%">
+<tr><td><b><font size="5" color="white">Choose your State</font></b></td>
+<td>
+<select name="state" id=stat width=20>
+<option value="Chandigarh">Chandigarh</option><option value="Delhi">Delhi</option><option value="Haryana">Haryana</option><option value="Hydrabad">Hydrabad</option><option value="Jaipur">Jaipur</option><option value="Karnataka">Karnataka</option><option value="Kerala">Kerala</option><option value="Kolkata">Kolkata</option><option value="Maharashtra">Maharashtra</option><option value="Mysore">Mysore</option><option value="Patna">Patna</option><option value="TamilNadu">Tamil Nadu</option><option value="UtterPradesh">Utter Pradesh</option>
+</select>
+</table>
+<input type=submit class="btn" name=b1 value="Enter Into Gallery" style="height: 40px; width: 180px;" >
+</div></font>
+</center>
+
+<div class="con">
+NOTE: <br/> 
+<ul>
+<li>Weekdays - Monday to Friday </li><br/>
+<li>Weekends/Holidays- Saturday, Sunday, Public Holidays & Special Days as per the management of Fun Gallery Holidays Limited</li> <br/>
+</ul>
+
+Terms and Conditions - 
+<ol>
+<li>Taxes as applicable as per GST @ 18%.</li>
+<li>Ticket prices for children is based on height, ranging between 85 - 140 cm.</li>
+<li>No tickets required for children below 85 cm in height.</li>
+<li>Park is open from 11:00 AM to 7:00 PM on Peak Season Weekends and Normal Season Weekends/Holidays.</li>
+<li>Park is open from 11:00 AM to 6:00 PM on Normal Season Weekdays.</li>
+<li>The total bill value after tax will be rounded off to the nearest 5 Rs.</li>
+<li>Defence Discount is only applicable for currently servicing Defence Personnel from Army, Navy & Air Force upon showing original photo ID proof issued by the relevant employment authority (Dependents of service personnel, ex-servicemen, Defence civilians cannot avail the offer).</li>
+<li>Senior citizen ticket prices are applicable to guests above 60 years only upon showing original govt photo ID proof with date of birth for age verification.  </li>
+</ol>
+<font>
+Contacts:<br/>
+<ul>
+<li>harishselvaraj936@gmail.com</li><br/>
+<li>9176336624</li><br/>
+<li>7904856080</li><br/>
+</ul>
+</div>
+
+
+</form> </body>
+</html>
